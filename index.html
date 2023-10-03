@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> scripts "Incorporado" ao HTML</title>
+    <script>type = "text/javascript" 
+    </script>     
+
+</head>
+
+<body>
+ 
+    <h1>Listagem de alunos</h1>
+
+    <button id="botao Adicionar">Adicionar Nome e RGM</button>
+
+    <ul id="ListaNomes"></ul>
+
+    <script>
+
+      const btn = document.getElementById ("botaoAdicionar");
+      let ListaNomes = document.getElementById("ListaNomes");
+
+      btn.addEventListener("click", function name(params) {
+        let nome = prompt ("Digite o nome do aluno");
+        let rgm = promp ("Digite o RGM do aluno");
+
+        let novoItem =document.createElement("li");
+        novoItem.textContent = "Nome:" + nome + ", RGM:" + rgm;
+
+        listaNomes.appendchild (novoItem);
+        
+      });
+
+    </script> 
+ 
+</body>
+</html>
